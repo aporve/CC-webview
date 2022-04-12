@@ -56,7 +56,8 @@
             console.log('searchParams', searchParams);
             if(searchParams.has('data')){
             let data = searchParams.get('data');
-            console.error( 'parseData---------->>',data );
+            let string =  JSON.stringify(data)
+            console.error( 'parseData---------->>',string );
 
             console.error('In Home.html')
           }
