@@ -1,34 +1,9 @@
-window.addEventListener('message', function (eventData) {
-    console.log("CHECKING FOR EVENT");
-    console.log(eventData);
-    try {
-        if (JSON.parse(eventData.data)) {
-            let event = JSON.parse(eventData.data);
-            console.log('Event~~~~~~~~~>>',event)
-            console.log('Coke Event~~~~~~>>',event.data.code)
-            console.log('coke Data~~~~~~~~~~>>',event.data.data)
-
-
-            let cEvent = event.data.code;
-            let cEventData = event.data.data;
-            
-        }
-
-    } catch (error) {
-        console.log(error, 'Error~~~~~~~~~>>')
-        return;
-    }
-}, false);
-
-
-
-
-// var config = window.config;
-// console.log('This is config in ==> en.js file', config);
-// console.log('This is config in ==> parent =>  en.js file', parent);
-// console.log('This is config in ==> parent.window ==> en.js file', parent.window);
-// // console.log('This is config in ==> parent.window.config ==> en.js file', parent.window.config);
-// console.log(window, 'window-----');
+var config = window.config;
+console.log('This is config in ==> en.js file', config);
+console.log('This is config in ==> parent =>  en.js file', parent);
+console.log('This is config in ==> parent.window ==> en.js file', parent.window);
+// console.log('This is config in ==> parent.window.config ==> en.js file', parent.window.config);
+console.log(window, 'window-----');
 // config = {
 //     "search" : {
 //         "placeholder" : "Search for beverage..."
