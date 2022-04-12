@@ -56,6 +56,8 @@
             console.log('searchParams', searchParams);
             if(searchParams.has('data')){
             let data = searchParams.get('data');
+            console.error(data, 'Simple data~~~~~~~~~~~>>');
+            console.log(JSON.parse(data), 'Json parse~~~~>>')
             let string =  JSON.stringify(data)
             console.error( 'parseData---------->>',string );
 
