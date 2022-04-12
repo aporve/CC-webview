@@ -21,7 +21,7 @@ window.addEventListener('message', function (eventData) {
 }, false);
 
 
-
+console.log(window.config);
 
 console.log('obj~~~~~~~~>>', obj)
 
