@@ -21,9 +21,7 @@ window.addEventListener('message', function (eventData) {
         return;
     }
 
-}, false);
-
-
+    
 (function () {
     setTimeout(() => {
         loadPageContent("homepage")
@@ -167,3 +165,7 @@ function switchTabs(id) {
     }, 100);
 
 }
+
+
+}, false);
+
