@@ -56,6 +56,9 @@
             console.log('searchParams', searchParams);
             if(searchParams.has('data')){
             let data = searchParams.get('data');
+            for(var property in data) {
+                console.log(property + "=" + data[property]);
+            }
             console.log('Simple data~~~~~~~~~~~>>', data);
             console.log(JSON.parse(data), 'Json parse~~~~>>')
             let string =  JSON.stringify(data)
