@@ -26,22 +26,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Custom javascript -->
-    <script type="text/javascript" src="./assets/data/en.js"></script>
-    <script>
-        $( document ).ready(function() {
-            
-            let searchParams = new URLSearchParams(window.location.search)
-            console.log('searchParams', searchParams);
-            if(searchParams.has('data')){
-            let data = searchParams.get('data')
-            let parseData = JSON.parse(data)
-            console.error( 'parseData---------->>',parseData );
-
-            console.error('In Home.html')
-          }
-        });
-    </script>
-    <script type="text/javascript" src="./assets/js/home.js"></script>
+   
 </head>
 
 <body id="bodyCasontent">
@@ -59,6 +44,25 @@
     <div style="height: 54px;"></div>
     <div id="bodyContent"></div>
     <div id="checkoutcart"></div>
+
+
+
+
+    <script type="text/javascript" src="./assets/data/en.js"></script>
+    <script>
+        $( document ).ready(function() {
+            
+            let searchParams = new URLSearchParams(window.location.search)
+            console.log('searchParams', searchParams);
+            if(searchParams.has('data')){
+            let data = searchParams.get('data');
+            console.error( 'parseData---------->>',data );
+
+            console.error('In Home.html')
+          }
+        });
+    </script>
+    <script type="text/javascript" src="./assets/js/home.js"></script>
 </body>
 
 
