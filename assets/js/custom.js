@@ -7,11 +7,10 @@ window.addEventListener('message', function (eventData) {
             console.log(event, 'Event~~~~~~~~~>>')
             let sourceIframe;
             if (event.event_code === 'coke-label') {
-                iframe = document.getElementById('ymIframeId');
-                var eventData = event.data.data;
-                console.log(eventData);
-              
-
+                console.log(event.event_code, 'Event code~~~~~~~~~~>>')
+                var data = event.event_code;
+                console.log(data, 'Data~~~~~~~')
+                console.log(data.data, 'Data of Data~~~~>>')
 
 
 
