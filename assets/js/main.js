@@ -173,7 +173,4 @@ var obj = {
 
 console.log('obj~~~~~~~~>>', obj)
 
-const frame = document.getElementById('ymIframeId');
-frame.contentWindow.postMessage('obj', obj)
-
-postMessage('obj', obj);
+parent.postMessage('obj', obj);
