@@ -5,17 +5,17 @@ window.addEventListener('message', function (eventData) {
         if (JSON.parse(eventData.data)) {
             let event = JSON.parse(eventData.data);
             console.log(event, 'Event~~~~~~~~~>>')
-            let sourceIframe;
-            if (event.event_code === 'coke-label') {
-                console.log(event.event_code, 'Event code~~~~~~~~~~>>')
-                var data = event.event_code;
-                console.log(data, 'Data~~~~~~~')
-                console.log(data.data, 'Data of Data~~~~>>')
+            console.log(event.data.event_code, 'Coke data~~~~~~>>')
+            // if (event.event_code === 'coke-label') {
+            //     console.log(event.event_code, 'Event code~~~~~~~~~~>>')
+            //     var data = event.event_code;
+            //     console.log(data, 'Data~~~~~~~')
+            //     console.log(data.data, 'Data of Data~~~~>>')
 
 
 
 
-            }
+            // }
         }
 
     } catch (error) {
