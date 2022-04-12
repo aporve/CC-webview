@@ -3,7 +3,7 @@ console.log('This is config in ==> en.js file', config);
 console.log('This is config in ==> parent =>  en.js file', parent);
 console.log('This is config in ==> parent.window ==> en.js file', parent.window);
 console.log('This is config in ==> parent.window.config ==> en.js file', parent.window.config);
-var config = {
+config = {
     "search" : {
         "placeholder" : "Search for beverage..."
     },
