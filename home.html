@@ -31,9 +31,13 @@
         $( document ).ready(function() {
             
             let searchParams = new URLSearchParams(window.location.search)
+            console.log('searchParams', searchParams);
             if(searchParams.has('data')){
             let data = searchParams.get('data')
-            console.error( 'Data---------->>',data );
+            let parseData = JSON.parse(data)
+            console.error( 'parseData---------->>',parseData );
+
+            console.error('In Home.html')
           }
         });
     </script>
