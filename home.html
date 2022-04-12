@@ -26,6 +26,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Custom javascript -->
+    <script type="text/javascript" src="./assets/data/en.js"></script>
+    <script type="text/javascript" src="./assets/js/home.js"></script>
    
 </head>
 
@@ -48,27 +50,7 @@
 
 
 
-    <script type="text/javascript" src="./assets/data/en.js"></script>
-    <script>
-        $( document ).ready(function() {
-            
-            let searchParams = new URLSearchParams(window.location.search)
-            console.log('searchParams', searchParams);
-            if(searchParams.has('data')){
-            let data = searchParams.get('data');
-            for(var property in data) {
-                console.log(property + "=" + data[property]);
-            }
-            console.log('Simple data~~~~~~~~~~~>>', data);
-            console.log(JSON.parse(data), 'Json parse~~~~>>')
-            let string =  JSON.stringify(data)
-            console.log( 'parseData---------->>',string );
-
-            console.error('In Home.html')
-          }
-        });
-    </script>
-    <script type="text/javascript" src="./assets/js/home.js"></script>
+   
 </body>
 
 
