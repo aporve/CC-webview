@@ -5,7 +5,8 @@ window.addEventListener('message', function (eventData) {
         if (JSON.parse(eventData.data)) {
             let event = JSON.parse(eventData.data);
             console.log(event, 'Event~~~~~~~~~>>')
-            console.log(event.data.event_code, 'Coke data~~~~~~>>')
+            console.log(event.data.code, 'Coke Event~~~~~~>>')
+            console.log(event.data.data, 'coke Data~~~~~~~~~~>>')
             // if (event.event_code === 'coke-label') {
             //     console.log(event.event_code, 'Event code~~~~~~~~~~>>')
             //     var data = event.event_code;
