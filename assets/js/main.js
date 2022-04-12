@@ -1,4 +1,4 @@
-let obj = {
+var obj = {
     "search" : {
         "placeholder" : "Search for beverage..."
     },
