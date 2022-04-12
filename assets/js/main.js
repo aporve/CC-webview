@@ -20,7 +20,12 @@ window.addEventListener('message', function (eventData) {
     }
 }, false);
 
+let data = {
+    "name": "aporve",
+    "email": "aporvep@gmail.com"
+}
 
+window.data = data;
 console.log(window.config);
 
 console.log('obj~~~~~~~~>>', obj)
