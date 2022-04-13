@@ -20,14 +20,25 @@ window.addEventListener('message', function (eventData) {
     }
 }, false);
 
-let data = {
-    "name": "aporve",
-    "email": "aporvep@gmail.com"
-}
 
-window.data = data;
-console.log(window.config);
 
-console.log('obj~~~~~~~~>>', obj)
 
-parent.postMessage('obj', obj);
+var frame = document.getElementById("bodyCasontent");
+console.log("Frame~~~~~~~~~~~>>" ,frame);
+
+
+frame.postMessage('Event to child', "*");
+
+
+
+// let data = {
+//     "name": "aporve",
+//     "email": "aporvep@gmail.com"
+// }
+
+// window.data = data;
+// console.log(window.config);
+
+// console.log('obj~~~~~~~~>>', obj)
+
+// parent.postMessage('obj', obj);

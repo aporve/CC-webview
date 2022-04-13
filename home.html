@@ -28,17 +28,31 @@
     <!-- Custom javascript -->
     <!-- <script type="text/javascript" src="./assets/data/en.js"></script> -->
     <script>
-        console.log('Widnow', window)
-        console.log('window.data', window.data);
+        var parentWindow = window.parent;
+
+
+        window.addEventListener("message", (e) => {
+            var data = e.data
+            console.log('Receive message from parent', data);
+        })
+
+        
+        window.addEventListener("load", () => {
+           parentWindow.postMessage('shakehand: Message from child to parent');
+        })
+
+
+        // console.log('Widnow', window)
+        // console.log('window.data', window.data);
     
-        $( document ).ready(function() {
+        // $( document ).ready(function() {
             
-            let searchParams = new URLSearchParams(window.location.search)
-            if(searchParams.has('data')){
-            let data = searchParams.get('data')
-            console.error(data);
-          }
-        });
+        //     let searchParams = new URLSearchParams(window.location.search)
+        //     if(searchParams.has('data')){
+        //     let data = searchParams.get('data')
+        //     console.error(data);
+        //   }
+        // });
     </script>
     <script type="text/javascript" src="./assets/js/home.js"></script>
    
