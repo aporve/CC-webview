@@ -12,6 +12,10 @@ window.addEventListener('message', function (eventData) {
             let cEvent = event.data.code;
             let cEventData = event.data.data;
             
+
+
+            var frame = document.getElementById("ymIframe");
+            console.log("In Frame~~~~~~~~~~~>>" ,frame);
         }
 
     } catch (error) {
@@ -23,7 +27,7 @@ window.addEventListener('message', function (eventData) {
 
 
 
-var frame = document.getElementById("bodyCasontent");
+var frame = document.getElementById("ymIframe");
 console.log("Frame~~~~~~~~~~~>>" ,frame);
 
 
